@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Exercise</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form name='registration'>
+            <label for='firstName'>First Name: </label>
+            <input id='firstname'name='firstName' placeholder='First Name' required type="text">
+            <label for='lastName'>Last Name: </label>
+            <input id='lastName' name='lastName' placeholder='Last Name'  required type='text'>
+            <br>
+            <label for='male'>Male: </label>
+            <input type='radio' id='male' name='gender'>
+            <label for="female">Female: </label>
+            <input type='radio' id='female' name='gender'>
+            <label for='other'>Other: </label>
+            <input type='radio' id='other' name='gender'>
+            <br>
+            <label for='email'>Email: </label>
+            <input type='email' name="email" id='email' placeholder="Email" required>
+            <label for='password'>Password</label>
+            <input type='password' name='password' id='password' placeholder='Password' minlength="5" maxlength="10" required>
+            <br>
+            <label for='Birthday'>Birthday: </label>
+            <select id='month'>
+                <option value=''>Month</option>
+                <option value="jan">January</option>
+                <option value='feb'>February</option>
+                <option value='mar'>March</option>
+            </select>
+            <select id='day'>
+                <option value=''>Day</option>
+                <option value='01'>1</option>
+                <option value='02'>2</option>
+                <option value='03'>3</option>
+            </select>
+            <select>
+                <option value=''>Year</option>
+                <option value='1985'>1985</option>
+                <option value='1986'>1986</option>
+                <option value='1987'>1987</option>
+            </select>
+            <br>
+            <label for='agreeTOS'>I agree to the terms and conditions</label>
+            <input type='checkbox' id="agreeTOS"> 
+            <br>
+            <input type='submit'>
+            
+        </form>
+    </body>
+</html>
