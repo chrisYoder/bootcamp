@@ -1,0 +1,16 @@
+--Texts and fonts--
+
+--font family
+    --determines the style of the text
+--font size
+    --determines how big the text is
+        --em is a relative font size
+--font-weight
+    --bold, normal, lighter, 100-900
+--line-height
+    --usually use 1.5 or 2. 
+    --acts like double spacing in Word
+--text-align
+    --aligns text to center, left, right,justify
+--text-decoration
+    --underline, line through, overline

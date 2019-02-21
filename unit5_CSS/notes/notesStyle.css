@@ -1,0 +1,109 @@
+/*body {
+    background: url(https://www.tempaperdesigns.com/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/w/o/woodgrain_texturedpewter_wo079_rgb_swatch_1.jpg);
+}
+
+h1 {
+    color: orange;
+}
+
+li {
+    border: 1px solid rgb(0,0,0);
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+}
+li:nth-child(1){
+    color: rgba(86, 13, 86, 1);
+}
+
+li:nth-child(2){
+    color: rgba(86, 13, 86, .66);
+}
+
+li:nth-child(3){
+    color: rgba(86, 13, 86, .33);
+}
+
+li:hover{
+    color: rgba(0,0,0,1);
+}*/
+
+:root{
+    --main-color: rgba(0, 233, 255);
+    --bord-rad: 10px;
+}
+
+/*Page Setup*/
+body{
+    background: black;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+h1{
+    color: var(--main-color);
+    text-align: center;
+}
+
+h4 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+li{
+    color: var(--main-color);
+    margin: 7px;
+    padding: 2px;
+}
+
+a {
+    color: var(--main-color);
+}
+span {
+    border: 2px solid var(--main-color);
+    border-radius: var(--bord-rad);
+    padding: 2px;
+    color: var(--main-color)
+}
+
+span:hover{
+    background: rgba(0, 230, 255, .5);
+    color: rgba(50, 2330, 255, 1);
+}
+
+.card {
+    border: 1px solid var(--main-color);
+    border-radius: var(--bord-rad);
+    width: 150px;
+}
+
+/*Selector Notes*/
+/*
+*{
+    border: 1px solid lightgrey;
+}
+
+li a {
+    color: lightGreen;
+}
+
+h4 + ul {
+    background-color: grey;
+}
+
+a[href]{
+    text-decoration: line-through;
+}
+
+li:nth-of-type(3){
+    background-color: red;
+}
+*/
+
+
+
+

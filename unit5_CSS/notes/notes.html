@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Notes</title>
+        <!--<style type="text/css">
+            h1 {
+                color: orange;
+            }
+            
+            li {
+                color: purple;
+            }
+        </style>-->
+        <style>
+            /*ul {*/
+            /*    color: purple;*/
+            /*}*/
+            body{
+                color: red;
+            }
+            
+            p {
+                color: green;
+            }
+            
+            ul {
+                color: blue;
+            }
+            
+            li {
+                color: orange;
+            }
+            
+            .highlight {
+                color: yellow;
+            }
+            
+            #testHypo{
+                color: rgba(255,0,0,.5);
+            }
+            
+            #testHypo:hover{
+                color: rgba(0,0,0,1);
+            }
+        </style>
+        <!--<link rel="stylesheet" href="notesStyle.css" type="text/css" />-->
+    </head>
+    <body>
+         <h1>CSS Specificity</h1>
+         
+         <p>Hello!!!</p>
+        <ul>
+            <!--even though I styled the ul the li and span inherited the styling-->
+            <li class='highlight' id='testHypo'><span>Matthew</span></li>
+            <li><span>Mark</span></li>
+            <li><span>Luke</span></li>
+            <li><span>John</span></li>
+        </ul>
+        <!--Oldest Way of Styling...styling in the elements-->
+        <!--
+        <h1 style="color: orange;">About Me</h1>
+        <h4>Hobbies</h4>
+        <ul>
+            <li style="color:purple;">Reading</li>
+            <li style="color:purple;">Coding</li>
+            <li style="color:purple;">Sleeping</li>
+        </ul>
+        -->
+        
+        <!--Older Way of Styling...styling in the head-->
+        <!--
+        <h1>About Me</h1>
+        <h4>Hobbies</h4>
+        <ul>
+            <li>Reading</li>
+            <li>Coding</li>
+            <li>Sleeping</li>
+        </ul>-->
+        
+        <!--Best Way of Styling...style sheets-->
+        <!--
+        <h1>About Me</h1>
+        <h4>Hobbies</h4>
+        <ul>
+            <li>Reading</li>
+            <li>Coding</li>
+            <li>Sleeping</li>
+        </ul>
+        -->
+        
+        <!--<h1>Todo List</h1>
+        <ul>
+            <li  >
+                <input type='checkbox' checked>
+                Read Stoic Philsophy
+            </li>
+            <li >
+                <input type='checkbox'>
+                Work on Bootcamp material
+            </li>
+            <li >
+                <input type='checkbox'>
+                Do something with Emily
+            </li>
+        </ul>-->
+        
+        <!--<h1>Selector Demo</h1>
+        
+        <a href="https://www.google.com">Click Me For Google</a>
+        
+        <div id='container'>
+            <div class='card' id='card1'>
+                <h4>Popular fruits</h4>
+                <ul>
+                    <li><span>apples</span></li>
+                    <li><span>oranges</span></li>
+                    <li><span>Bananas</span></li>
+                </ul>
+            </div>
+            
+            <div class='card' id='card2'>
+                <h4>Popular Vegetables</h4>
+                <ul>
+                    <li><span>Carrots</span></li>
+                    <li><span>Peas</span></li>
+                    <li><span>Asparagus</span></li>
+                </ul>
+            </div>
+            
+            <div class="card" id='card3'>
+                <h4>Popular Sites</h4>
+                <ul>
+                    <li><span><a href="www.google.com">Google</a></span></li>
+                    <li><span><a href="www.facebook.com">Facebook</a></span></li>
+                    <li><span><a href="www.reddit.com">Reddit</a></span></li>
+                </ul>
+            </div>
+        </div>-->
+        
+       
+    </body>
+</html>

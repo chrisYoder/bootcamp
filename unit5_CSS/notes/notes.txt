@@ -1,0 +1,44 @@
+CSS colors:
+    - built in colors are not particularly nice
+        -not used often
+        
+    -hexadecimal
+        -format: #_ _ _ _ _ _ 
+        -first two = amount of red
+        -middle two = amount of green
+        -last two = amount of blue
+        -#000000 = black
+        -#FFFFFF = white
+        
+    -rgba 
+        -format rgba(amt of red, amt of green, amt of blue, alpha)
+            -3 color channels
+                -0-255 with all 0's being black and all 255 being white
+            -alpha is the opacity of the elements   
+                -0 to 1 with one being fully visible and zero being invisible
+                -I will demonstrate on the li's
+                
+                
+CSS Selectors that I must memorize
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+    -elements--> li{}
+    -classes--> .classname{}
+    -id--> #idName{}
+    -Star--> *{} --> selects everything
+    -descendent--> parent descendent{} --> selects all the elements that are descendents of the parent
+    -adjacent--> sibling + sibling {} --> allows us to select elements that on the same nesting level
+    -attribute--> elem[attr] {}--> allows us to select all elements with a specific attribute 
+        -input[type='inputType']{ style }
+        -a[href="link"] { style ]
+    -nth of type--> element:nth-of-type(num) -->allows us to select the nth number of a parent element
+    
+CSS Inheritance and Specificity
+    -Inheritance: an element will automatically inherit the styling of a parent element. 
+    
+    -specificity: the more specific a selector is (li v body) then that is the style that will be applied.
+        -specificity order: element, element+psuedoclass, class, class+psuedoclass, id, id+psuedoclass
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+        
+    -so if body{color: red;} and ul{color: blue} then the li elements will be blue because the ul selector is more specific than the body selector and it will inherit the styling from the ul selector.
+    
