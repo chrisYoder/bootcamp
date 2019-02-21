@@ -2,19 +2,32 @@ body{
     font-size: 10px;
 }
 p{
-    font-family:Arial;
-    font-size: 2em;
+    font-family:Nova Flat;
+    font-size: 1em;
     font-weight: normal;
     line-height: 2;
     text-align: justify;
 }
 
 h1 {
-    font-family: Georgia;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
     font-size: 3em;
     text-align: center;
 }
 
 #emDouble {
     font-size: 2em;
+}
+
+.boxModel{
+    /*content-width and height*/
+    width: 50%;
+    height: 10%;
+    /*Border*/
+    border: 2px solid blue;
+    /*Padding*/
+    padding: 10px 5px 15px 0px;
+    /*Margin*/
+    /*margin: 20px 40px 50px 100px;*/
+    margin: 0 auto 0 auto; /*centers element*/
 }

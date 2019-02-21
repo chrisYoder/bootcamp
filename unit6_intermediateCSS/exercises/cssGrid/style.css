@@ -1,0 +1,81 @@
+:root{
+    --font: 'Righteous';
+    --height: 100px;
+    --width: 100px;
+    --border: 3px solid black;
+}
+
+body{
+    font-family: var(--font);
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:  
+        "blank space1 space2 space3 blank"
+        "blank space4 space5 space6 blank"
+        "blank space7 space8 space9 blank";
+    grid-gap: 0;
+}
+
+.space {
+    display: inline-block;
+    height: var(--height);
+    width: var(--width);
+    margin: -4px;
+}
+
+.row{
+    text-align: center;
+}
+
+#cell1 {
+    grid-area: space1;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#cell2 {
+    grid-area: space2;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#cell3 {
+    grid-area: space3;
+    border-bottom: var(--border);
+}
+
+#cell4 {
+    grid-area: space4;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#cell5 {
+    grid-area: space5;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#cell6 {
+    grid-area: space6;
+    border-bottom: var(--border);
+}
+
+#cell7 {
+    grid-area: space7;
+    border-right: var(--border);
+}
+
+#cell8 {
+    grid-area: space8;
+    border-right: var(--border);
+}
+
+
+

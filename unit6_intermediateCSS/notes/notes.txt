@@ -14,3 +14,13 @@
     --aligns text to center, left, right,justify
 --text-decoration
     --underline, line through, overline
+    
+    
+--Box Model--
+
+--Everything is considered a box
+--a box consists of (from inside out):
+    --content
+    --padding -- space between content and border
+    --border
+    --margin -- amount of space surrounding the box
