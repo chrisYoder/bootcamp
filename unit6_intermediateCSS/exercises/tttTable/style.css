@@ -1,0 +1,43 @@
+:root{
+    --font: 'Satisfy', cursive;
+    --height: 100px;
+    --width: 100px;
+    --border: 2px black solid;
+}
+
+body{
+    font-family: var(--font);
+}
+
+h1 {
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+}
+
+
+td {
+    height: var(--height);
+    width: var(--width);
+    margin: -4px;
+}
+
+.r{
+    border-right: var(--border);
+    
+}
+
+.b {
+    border-bottom: var(--border);
+}
+
+.l {
+    border-left: var(--border);
+    
+}
+
+.t{
+    border-top: var(--border);
+}
