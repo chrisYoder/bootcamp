@@ -33,27 +33,28 @@ h1{
     text-align: center;
 }
 
+.r {
+  border-right: var(--border);  
+}
+
+.b {
+    border-bottom: var(--border);
+}
 #cell1 {
     grid-area: space1;
-    border-right: var(--border);
-    border-bottom: var(--border);
 }
 
 #cell2 {
     grid-area: space2;
-    border-right: var(--border);
-    border-bottom: var(--border);
 }
 
 #cell3 {
     grid-area: space3;
-    border-bottom: var(--border);
 }
 
 #cell4 {
     grid-area: space4;
-    border-right: var(--border);
-    border-bottom: var(--border);
+    
 }
 
 #cell5 {

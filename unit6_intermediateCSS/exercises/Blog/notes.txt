@@ -1,0 +1,10 @@
+border-color: #bdc3c7;
+date colro; #3498db
+h2 color: #2c3e50
+
+font: source sans pro
+
+blockquote with left border
+date all caps
+date letter spacing
+hr element between posts

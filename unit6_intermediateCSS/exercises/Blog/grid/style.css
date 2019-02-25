@@ -1,0 +1,32 @@
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#view {
+    grid-column: 2/3;
+    border: 20px solid #bdc3c7;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+blockquote{
+    border-left: 2px solid #bdc3c7;
+    padding: 15px;
+    margin: 0px;
+}
+
+.date{
+    color: #3498db;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #2c3e50;
+}
