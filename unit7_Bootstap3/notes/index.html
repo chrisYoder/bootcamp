@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Basics</title>
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+       
+    </head>
+    <body>
+        
+        <!--nav bars custom-->
+       
+                
+        <nav class='navbar navbar-default'>
+            <div class='container'>
+                 <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">The Coding Stoic</a>
+                </div>
+                 
+                <div class="collapse navbar-collapse" id='bs-nav-demo'>
+                    <ul class='nav navbar-nav'>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class='nav navbar-nav navbar-right'>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </nav>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <h1>Bootstrap Basics</h1>
+        <button class='btn btn-default active'>This is a button</button>
+        <input class='btn btn-primary'>
+        <a href='https://www.google.com' id='googleLink' class='btn btn-info' target='_blank'>Google</a>
+        <div class='hr'></div>
+        <div id='jumboWrapper'>
+            <div class='jumbotron'>
+                <h1>This is my first jumbotron</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam iste, debitis? Nobis architecto tempora, dolorem porro provident ratione repellat, laudantium earum quibusdam at atque inventore. Iure blanditiis minima sed laboriosam necessitatibus vel maxime quis temporibus architecto. Mollitia, sint. Ratione excepturi magnam, aspernatur nemo eaque veritatis nisi? Ratione optio, odio.</p>
+                <button id='danger' class='btn btn-danger'>Danger Will Robinson</button>
+            </div>
+        </div>
+        <div class='hr'></div>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control has-success " id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        
+        <div class='hr'></div>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          </div>
+          <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+        
+        
+      <!--Jquery cdn-->
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+    </body>
+</html>

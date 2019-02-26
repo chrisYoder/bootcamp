@@ -1,0 +1,30 @@
+#googleLink:hover {
+    background-color: rgb(255,255,255);
+    color: #32B1D6;
+    border-radius: 25%;
+    font-size: 2.0rem;
+}
+
+#danger:hover {
+    background-color: green;
+    border: 1px green solid;
+}
+
+
+.hr {
+    border-bottom: 2px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.container{
+    border: 1px solid black;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.brand, li, input, button{
+    font-family:  'Space Mono';
+    font-size: 1.25rem;
+}
+
