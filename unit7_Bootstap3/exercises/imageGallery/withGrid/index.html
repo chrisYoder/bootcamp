@@ -2,22 +2,51 @@
 <html>
     <head>
         <title>Image Gallery with CSS Grid</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <div class='grid'>
-          <header class='menu'>
-            <h2 class='logo flex'><a href='#' class="linkCSS"><span><i class='far fa-images'></i> IMGS</span></a></h2>
-            <div class='aboutLink flex'><a href="#" class='linkCSS'>About</a></div>
-            <div class='contactLink flex'><a href="#" class='linkCSS'>Contact</div>
-            <div class='empty'></div>
-            <div class='loginLink flex'><a href='#' class='linkCSS'>Login</a></div>
-            <div class='signUpLink flex'><a href='#' class='linkCSS'>Sign Up</a></div>
+          <div class='navbar'>
+            <div class='logo'>
+              <a id='logoImg' href='#' class="linkCSS "><span><i class='far fa-images'></i> IMGS </span></a>
+              <input type='checkbox' id='nav-toggle'>
+            </div>
             
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <div class="menuButton">
+              <label for='nav-toggle'>
+                <span><i class="fas fa-bars hamburger"></i></span>
+              </label>
+            </div>
             
-          </header>
+            
+              
+                <div class='about linkCSS'>about</div>
+                <div class='contact linkCSS'>contact</div>
+                <div class='login linkCSS'>login</div>
+                <div class='signup linkCSS'>signup</div>
+              
+            
+           
+          </div><!--navbar--> 
+          
+          <div class='content'>
+            <img class='image i1' src='http://i.imgur.com/qK42fUu.jpg'>
+            <img class='image i2' src='https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+            <img class='image i3' src='https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+            <img class='image i4' src='https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9'>
+            <img class='image i5' src='https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+            <img class='image i6' src='https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+            <img class='image i7' src='https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+            <img class='image i8' src='https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+            <img class='image i9' src='https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450'>
+          </div>
+          
+            
+           
+            
+          
             
                 
             
@@ -27,11 +56,7 @@
             
           
           
-          <section class="mainContent">
-            <div class='leftBlankSpace'>Left Blank</div>
-            <div class='contentArea'>Content</div>
-            <div class='rightBlankSpace'>Right Blank</div>
-          </section>
+          
           
         </div>
     </body>
