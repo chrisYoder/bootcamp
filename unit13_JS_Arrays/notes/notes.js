@@ -94,3 +94,36 @@ numbers.forEach(function(color){
   }
 });
 
+// Build my own .forEach
+
+var nums = [45, 65, 77, 24];
+
+function myForEach( arr, func){
+  for(var i = 0; i < arr.length; i++){
+    func(arr[i]);
+  }
+}
+
+colors = ['red', 'orange', 'yellow'];
+
+myForEach(colors, function(color){
+  console.log(color);
+});
+
+myForEach(nums, function(num){
+  console.log(num);
+});
+
+Array.prototype.myForEach = function(func) {
+  for(var i = 0; i< this.length; i++){
+    func(this[i]);
+  }
+};
+
+console.log(colors.myForEach(function(color){
+  console.log(color);
+})
+);
+
+
+

@@ -6,11 +6,9 @@ function display(){
   todos.forEach(function(todo, i){
     console.log(`${i}: ${todo}`);
   });
-  
   console.log('***********');
-  
-
 }
+
 while(input !== 'quit'){
   if(input === 'new'){
     let newTodo = prompt('Enter new todo');
