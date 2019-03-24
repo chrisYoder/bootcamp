@@ -1,0 +1,6 @@
+DOM -- Document Object Model
+
+The interface between js, html, and css
+    change things
+    add/remove
+    interact
