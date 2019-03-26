@@ -1,0 +1,12 @@
+ADVANCED DOM MANIPULATION
+
+EVENTS
+
+-allow us to have things happen when the user does something
+  -clicking on a button
+  -hovering oveer a link
+  -dragging and dropping
+  -keypresses
+  
+-process
+  -slect an element and add event listener
