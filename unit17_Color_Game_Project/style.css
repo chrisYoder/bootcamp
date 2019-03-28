@@ -1,49 +1,71 @@
 body{ 
-  background-color: #232323;
+  background-color: #232323; 
+  
 }
 
-.container{
+.container {
   display: grid;
-  grid-template-columns: repeat(3, 4fr)
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    '. header .'
+    '. display .';
+  justify-items: center;
+  grid-gap: .5em;
 }
 
+.container-header{
+  grid-area: header;
+}
+
+  .container-header h1 {
+    color: white;
+  }
 .container-square{
+  grid-area: display;
+  padding: 0px;
   display: grid;
-  grid-template-columns: repeat(3. 4fr);
-  grid-template-rows: repeat(2, 150px);
+  grid-template-columns:  repeat(3, 4fr);
+  grid-template-rows: auto auto;
   grid-template-areas:  
     'square1 square2 square3'
     'square4 square5 square6';
-  grid-gap: 1em;
+  grid-gap: .5em;
 }
 
 .square{
-  background-color: red;
   height: 150px;
   width: 150px;
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 10%;
 }
 
-#s1 {
-  grid-area: sqaure1;
+
+
+
+.s1 {
+  grid-area: square1;
+  
 }
 
-#s2 {
-  grid-area: sqaure2;
+.s2 {
+  grid-area: square2;
 }
 
-#s3 {
-  grid-area: sqaure3;
+.s3 {
+  grid-area: square3;
 }
 
-#s4 {
-  grid-area: sqaure4;
+.s4 {
+  grid-area: square4;
 }
 
-#s5 {
-  grid-area: sqaure5;
+.s5 {
+  grid-area: square5;
 }
 
-#s6 {
-  grid-area: sqaure6;
+.s6 {
+  grid-area: square6;
 }
 
