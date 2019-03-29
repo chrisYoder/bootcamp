@@ -1,0 +1,13 @@
+h1 {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+.done {
+  text-decoration: red wavy line-through;
+  opacity: 0.5;
+}
+
+.selected {
+  color: green;
+}

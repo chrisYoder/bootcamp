@@ -1,26 +1,78 @@
 body{ 
   background-color: #232323; 
+  margin:0;
+}
+
+.hardSetting{
+  display: none;
   
 }
 
+.fadeOut {
+  opacity: 0;
+  transition: .7s opacity;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(3, 4fr);
   grid-template-rows: auto;
   grid-template-areas: 
-    '. header .'
+    'header header header'
+    'menu menu menu'
     '. display .';
   justify-items: center;
-  grid-gap: .5em;
+  
 }
 
 .container-header{
   grid-area: header;
+  background: rgb(67, 125, 249);
+  justify-self: stretch;
 }
 
   .container-header h1 {
     color: white;
+    text-align: center; 
+    text-transform: uppercase;
+    align-self: stretch;
   }
+  
+  .container-header p {
+    margin: 0px;
+  }
+  
+  .menu {
+    background: white;
+    grid-area: menu;
+    text-align: center;
+    justify-self: stretch;
+    margin-bottom: 10px;
+  }
+  
+    .correct{
+      opacity: 0;
+    }
+    .menu .new, .difficulty, .correct{
+      margin: 0rem 3.25rem;
+      color: rgb(67, 125, 249);
+      font-weight: 700;
+    }
+    
+    .new:hover, .easy:hover, .hard:hover {
+      color: white;
+      background: rgb(67, 125, 249);
+    }
+    
+    
+      
+    
+    
+    
+  
+  #color{
+    font-size: 4rem;
+  }
+  
 .container-square{
   grid-area: display;
   padding: 0px;
