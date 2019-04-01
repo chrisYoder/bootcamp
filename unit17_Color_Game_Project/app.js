@@ -1,18 +1,18 @@
 'use strict';
-const squareColor = [];
-const squares = document.querySelectorAll('.square');
+let squareColor = [];
+let squares = document.querySelectorAll('.square');
+let max = 255;
 
-
-
+// functionality to randomly pick a square from the display
+// then add the rgb value to UI
 const paint = () => {
   squares.forEach( square => {
-    square.style.background = colorGenerator(255);
+    square.style.background = colorGenerator(max);
     squareColor.push(square.style.background);
   });
   let color = squareColor[getRandomInt(squareColor.length)];
   document.querySelector('#color').innerText = color;
 };
-
 
 // functionality to set colors for squares
 const colorGenerator = (max) => {
@@ -23,28 +23,12 @@ const colorGenerator = (max) => {
   return `rgb(${red}, ${blue}, ${green})`;
 };
 
-// functionality to randomly pick a square from the display
-// then add the rgb value to UI
-
+// random number generator for selecting colors and a box
 const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
-
-// console.log(squareColor);
-// console.log(squareColor.length);
-// console.log(getRandomInt(squareColor.length)) ;
-  
-
-window.onLoad(paint());  //I NEED TO FIGURE OUT HOW TO DO PAGE LOAD
-
+window.addEventListener('load', paint());  
 
 // GAME LOGIC
-
-//incorrect guess turns background of the square clicked to background color
-//correct guess:
-  // background of all squares
-  // header to the correct color
-  // .new.innerText = 'play again'.
-  
 const gameLogic = () => {
   squares.forEach(square => {
     square.addEventListener('click', () =>{
@@ -55,11 +39,11 @@ const gameLogic = () => {
           square.style.background = answer;
         });
         document.querySelector('.container-header').style.background = answer;
-        document.querySelector('.correct').style.opacity = '1';
+        document.querySelector('.correct').innerText = 'Correct!';
         document.querySelector('.new').innerText = 'Play again?';
-      }
-      else{
+      }else{
         square.classList.add('fadeOut');
+        document.querySelector('.correct').innerText = 'Try Again';
       }
     });
   });
@@ -69,24 +53,31 @@ gameLogic();
 
 //button functionality
 document.querySelector('.new').addEventListener('click', () => window.location.reload());
+
+document.querySelector('.easy').addEventListener('click', () => {
+  document.querySelector('.easy').classList.add('selected');
+  document.querySelector('.hard').classList.remove('selected');
+  document.querySelector('.s4').classList.remove('hardSetting');
+  document.querySelector('.s5').classList.remove('hardSetting');
+  document.querySelector('.s6').classList.remove('hardSetting');
+  squareColor = [];
+  max = 255;
+  squares = document.querySelectorAll('.square');
+  paint();
+  gameLogic();
+});
+
 document.querySelector('.hard').addEventListener('click', () => {
   document.querySelector('.s4').classList.add('hardSetting');
   document.querySelector('.s5').classList.add('hardSetting');
   document.querySelector('.s6').classList.add('hardSetting');
+  document.querySelector('.hard').classList.add('selected');
+  document.querySelector('.easy').classList.remove('selected');
+  squareColor = [];
+  squares = document.querySelectorAll('.hardGame');
+  max = 150;
+  paint();
+  gameLogic();
 });
 
-//   squares.forEach( square => {
-//     square.style.background = colorGenerator(150);
-//     squareColor.push(square.style.background);
-//   });
-//   let color = squareColor[getRandomInt(squareColor.length)];
-//   document.querySelector('#color').innerText = color;
-  
-//   gameLogic();
-// });
 
-// document.querySelector('.easy').addEventListener('click', () => {
-//   document.querySelector('.s4').classList.remove('hardSetting');
-//   document.querySelector('.s5').classList.remove('hardSetting');
-//   document.querySelector('.s6').classList.remove('hardSetting');
-// });

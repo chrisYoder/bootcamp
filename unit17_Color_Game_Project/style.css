@@ -8,6 +8,11 @@ body{
   
 }
 
+.selected {
+  background-color: rgb(67, 125, 249);
+  color: white;
+}
+
 .fadeOut {
   opacity: 0;
   transition: .7s opacity;
@@ -49,19 +54,17 @@ body{
     margin-bottom: 10px;
   }
   
-    .correct{
-      opacity: 0;
-    }
+    
     .menu .new, .difficulty, .correct{
       margin: 0rem 3.25rem;
       color: rgb(67, 125, 249);
       font-weight: 700;
     }
     
-    .new:hover, .easy:hover, .hard:hover {
-      color: white;
-      background: rgb(67, 125, 249);
-    }
+    /*.new:hover, .easy:hover, .hard:hover {*/
+    /*  color: white;*/
+    /*  background: rgb(67, 125, 249);*/
+    /*}*/
     
     
       
