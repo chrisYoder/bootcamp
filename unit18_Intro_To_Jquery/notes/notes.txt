@@ -1,0 +1,20 @@
+-.css allows us to set the css properties.
+  -we can create an object of properties and then pass that object as an arg 
+   for .css and it will apply each of the css properties.
+
+-.text allows us to set the text of an element
+
+-.html allows us to set the html of an element
+
+-.attr(arg1, arg2)
+  -when we pass just the first argument (ie $('element').attr('x')) then we 
+   will get the value of the attribute x of the element
+  -when we pass both arguments then we are setting the value of the attr.
+  
+-.val will get the value of an element
+
+-manipulating classes
+  -addClass()
+  -removeClass()
+  -toggleClass
+  

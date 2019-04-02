@@ -40,3 +40,28 @@ $('img').attr({
   width: '500px', 
   height: "500px"
 });
+
+
+$('input').attr('type', 'color');
+$('input').attr('type', 'checkbox');
+$('input').attr('type', 'text');
+
+$('img').css('width', '100px');
+$('img:first-of-type').css('width', '200px');
+$('img:last-of-type').css('width', '300px');
+
+//.val() extracts a value from an input
+$('input').val()
+//<-- ""
+$('input').val()
+// <--"Test"
+$('input').val('Chris Yoder');
+
+// Manipulating Classes
+
+$('li').val('My beard is amazing').addClass('correct');
+$('li').removeClass('correct');
+$('li').addClass('wrong');
+$('li').removeClass('wrong');
+$('li').toggleClass('done');
+
