@@ -1,0 +1,231 @@
+.grid{
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-rows: 50px auto;
+  grid-template-areas:  
+    '. . .'
+    '. l .'
+    '. . .';
+    
+}
+
+.todo {
+  grid-area: l;
+  
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: auto;
+  grid-template-areas:  
+    'd d d d d d d d d d d d'
+    't t t t t t t t t t t t'
+  
+}
+
+
+.dates {
+  grid-area: d;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:  
+    't t t t t t t . . . . dp'
+    'date date time time e e e e e e e e'
+    'dl dl dl dl dl dl dl dl dl dl dl dl';
+}
+
+  .datesTitle{
+    grid-area: t;
+  }
+  
+  .dp{
+    grid-area: dp;
+  }
+  
+  .date {
+    grid-area: date;
+  }
+  
+  .time {
+    grid-area: time;
+  }
+  
+  .event {
+    grid-area: e;
+  }
+
+  .datesList{
+    grid-area: dl;
+  }
+  
+
+  
+.tasks {
+  grid-area: t;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:  
+    'h h h h h h h h h h h tp'
+    'l l l l l l l l l l l l'
+}
+
+  .taskTitle{
+    grid-area: h;
+  }
+  
+  .tp {
+    grid-area: tp;
+  }
+  
+  .taskList {
+    grid-area: l;
+  }
+@media only screen and (max-width: 550px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 50px auto;
+    grid-template-areas:  
+      '. . .'
+      '. l .'
+      '. . .';
+      
+  }
+  .todo{
+    grid-area: l;
+  }
+  .dates {
+    grid-area: d;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:  
+      't t t t t t t t t t t dp'
+      'date date date date date date date date date date date date'
+      'time time time time time time time time time time time time'
+      'e e e e e e e e'
+      'dl dl dl dl dl dl dl dl dl dl dl dl';
+  }
+  
+   .datesTitle{
+      grid-area: t;
+    }
+  
+  .dp{
+      grid-area: dp;
+    }
+  
+  .date {
+    grid-area: date;
+  }
+  
+  .time {
+    grid-area: time;
+  }
+  
+  .event {
+    grid-area: e;
+  }
+
+  .datesList{
+    grid-area: dl;
+  }
+  
+    
+.tasks {
+  grid-area: t;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:  
+    'h h h h h h h h h h h tp'
+    'l l l l l l l l l l l l'
+}
+
+  .taskTitle{
+    grid-area: h;
+  }
+  
+  .tp {
+    grid-area: tp;
+  }
+  
+  .taskList {
+    grid-area: l;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto;
+    grid-template-areas:  
+      '. . . . . . . . . . . .'
+      'l l l l l l l l l l l l'
+      '. . . . . . . . . . . .';
+      
+  }
+  .todo{
+    grid-area: l;
+  }
+  .dates {
+    grid-area: d;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:  
+      't t t t t t t t t t t dp'
+      'date date date date date date date date date date date date'
+      'time time time time time time time time time time time time'
+      'e e e e e e e e'
+      'dl dl dl dl dl dl dl dl dl dl dl dl';
+  }
+  
+   .datesTitle{
+      grid-area: t;
+    }
+  
+  .dp{
+      grid-area: dp;
+    }
+  
+  .date {
+    grid-area: date;
+  }
+  
+  .time {
+    grid-area: time;
+  }
+  
+  .event {
+    grid-area: e;
+  }
+
+  .datesList{
+    grid-area: dl;
+  }
+  
+    
+.tasks {
+  grid-area: t;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:  
+    'h h h h h h h h h h h tp'
+    'l l l l l l l l l l l l'
+}
+
+  .taskTitle{
+    grid-area: h;
+  }
+  
+  .tp {
+    grid-area: tp;
+  }
+  
+  .taskList {
+    grid-area: l;
+  }
+}
