@@ -1,0 +1,5 @@
+JQUERY EVENTS
+  -.click()
+    -fires when something is clicked
+  -.keypress()
+  -.on()
