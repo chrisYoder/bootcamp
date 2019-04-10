@@ -29,4 +29,4 @@ app.get('/repeat/:word/:int', (req, res) => {
 
 let starRoute = app.get('*', (req, res) => res.send('Sorry, page not found...What are you doing with your life?'));
 starRoute;
-app.listen(process.env.PORT, process.env.IP, () => console.log('Server is running'));
+app.listen(3000, process.env.IP, () => console.log('Server is running'));
