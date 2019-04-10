@@ -1,0 +1,23 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "description": "Notes for the NPM section of Unit 24",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisYoder/bootcamp.git"
+  },
+  "author": "theCodingStoic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisYoder/bootcamp/issues"
+  },
+  "homepage": "https://github.com/chrisYoder/bootcamp#readme",
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "knock-knock-jokes": "^1.7.0"
+  }
+}
