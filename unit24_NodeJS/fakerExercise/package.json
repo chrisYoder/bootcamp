@@ -1,0 +1,25 @@
+{
+  "name": "faker_exercise",
+  "version": "0.0.1",
+  "description": "This is the faker exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisYoder/bootcamp.git"
+  },
+  "keywords": [
+    "faker"
+  ],
+  "author": "theCodingStoic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisYoder/bootcamp/issues"
+  },
+  "homepage": "https://github.com/chrisYoder/bootcamp#readme",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
