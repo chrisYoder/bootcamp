@@ -1,0 +1,7 @@
+<% include partials/header %>
+        <h1>The Ladies of Westeros</h1>
+
+        <% posts.forEach( post => { %>
+            <li><%= post.title %> by <strong><%= post.author %></strong></li>
+        <% }); %>
+<% include partials/footer %>
