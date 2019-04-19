@@ -1,0 +1,4 @@
+<% weatherData.forEach( point => { %>
+    <p><% point.utcTime.toString() %></p>
+    <li><%= point.skyDescription %>, <%= point.precipitationProbability %>, <%= point.precipitationDesc %></li>
+<% }); %> 

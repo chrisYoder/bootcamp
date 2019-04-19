@@ -1,0 +1,27 @@
+{
+  "name": "notes_intermediate_express",
+  "version": "1.0.0",
+  "description": "notes for intermediate express (unit 26)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisYoder/bootcamp.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "theCodingStoic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisYoder/bootcamp/issues"
+  },
+  "homepage": "https://github.com/chrisYoder/bootcamp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
