@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Patatap Clone</title>
+    <script type='text/javascript' src='paper-full.js'></script>
+    <script type='text/paperscript' canvas='myCanvas'>
+      //   var path = new Path();
+      //   path.strokeColor = 'red';
+      //   var v1 = new Point(100,100);
+      //   var v2 = new Point(200, 100);
+      //   var v3 = new Point(200, 200);
+      //   path.moveTo(v1);
+      //   path.lineTo(v1 + [100, 0]); //x: 200 y: 100
+        
+      //   path.moveTo(v2);
+      //   path.lineTo(v2 + [0, 200]); // x: 200 y: 200
+      //   // START AT 0,0
+      //   // EVERY 100 PIXELS NEW CIRCLE UNTIL 1000 (X AND Y)(10 CIRCLES)
+      //   // RADIUS = 10
+      // for(i = 0; i < 1001; i += 100){
+      //     for(j = 0; j < 1001; j += 100){
+      //       new Path.Circle({
+      //         center: [i, j], 
+      //         radius: 10,
+      //         fillColor: bronze
+      //       });
+      //     }
+      //   }
+      var length = 75;
+      var width = 75;
+      var rect = new Path.Rectangle({
+        point: [75, 75], 
+        size: [length, width],
+        strokeColor: 'black',
+        fillColor: 'blue'
+      });
+      
+      
+      function onFrame(event){
+        rect.rotate(3);
+        rect.fillColor.hue += 1;
+       
+        
+      }
+        
+        // var text = new PointText({
+      //   point: view.center, 
+      //   content: 'Click to focus and press some keys', 
+      //   justification: 'center', 
+      //   fontSize: 20, 
+      //   fillColor: bronze
+      // });
+       
+      // function onKeyDown(e){
+      //   text.content = 'The ' + e.key + ' key was pressed';
+      // }
+       
+      // function onKeyUp(e){
+      //   text.content = 'The ' + e.key + ' key was released';
+      // }
+    </script>
+    
+    <style>
+        body, html {
+          width: 100%;
+          height: 100%;
+        }
+        
+        canvas {
+          width: 100%;
+          height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id='myCanvas' resize></canvas>
+  </body>
+</html>
